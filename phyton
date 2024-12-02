@@ -1,0 +1,18 @@
+# Recebe a entrada do usuário
+entrada = input("Digite uma área de aplicação (saúde, segurança, viagens, educação): ").strip().lower()
+
+# Função responsável por receber uma área de aplicação e retornar sua respectiva descrição.
+def descrever_aplicacao(area):
+    if area == "saúde":
+        return "Diagnóstico precoce e tratamento personalizado."
+    elif area == "segurança":
+        return "Monitoramento e prevenção de crimes."
+    elif area == "viagens":
+        return "Veículos autônomos e otimização de rotas."
+    elif area == "educação":
+        return "Personalização do aprendizado e tutoria inteligente."
+    else:
+        return "Área não reconhecida. Por favor, escolha entre: saúde, segurança, transporte ou educação."
+
+# Imprime a descrição da aplicação na área recebida.
+print(descrever_aplicacao(entrada))
